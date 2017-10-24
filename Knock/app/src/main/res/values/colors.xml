@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBackground">#48b8b6</color>
+    <color name="colorBackgroundView">#5c5c5c</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorHintText">#bcbcbc</color>
+    <color name="colorStausBar">#FF2C8E8C</color>
+    <color name="colorBoderView">#FF41A7A6</color>
+    <color name="colorPanelLogin">#efefef</color>
+    <color name="colorButtonGreen">#2a6463</color>
+    <color name="colorRed">#D8202a</color>
+    <color name="tabcolor">#a2a2ef</color>
+    <color name="tabselect">#f40404</color>
+    <color name="colorBackgroundGray">#e1e1e1</color>
+    <color name="colorBackgroundEvent">#fafafa</color>
+    <color name="colorGreen">#3ce653</color>
+    <color name="colorRedFaint">#f8e9435c</color>
+    <color name="colorBlue">#3aade2</color>
+    <color name="colorLine">#fdefeeee</color>
+</resources>

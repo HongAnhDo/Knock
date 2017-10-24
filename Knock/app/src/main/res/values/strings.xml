@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Knock</string>
+    <string name="forget_pass"><u>Lost password or account</u>.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scrollable_dialog_title">Pick something</string>
+
+    <string name="fragment_pager_tab_list_view">ListView</string>
+    <string name="fragment_pager_tab_recycler_view">RecyclerView</string>
+    <string name="fragment_pager_tab_scroll_view">ScrollView</string>
+    <string name="fragment_pager_tab_web_view">WebView</string>
+    <string name="fragment_pager_tab_edit_text">EditText</string>
+    <string name="notify_alert_email">Email không tồn tại</string>
+    <string name="notify_alert_pass">Password quá ngắn \n(pass tối thiểu 6 ký tự)</string>
+    <string name="notify_alert">Bạn chưa nhập đủ thông tin</string>
+
+</resources>

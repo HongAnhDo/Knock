@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_back"
+            android:scaleType="centerCrop"
+            android:padding="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/btn_back"
+            android:gravity="center"
+            android:text="Forgot password"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:paddingRight="50dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/colorBlack"
+        android:textSize="40sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="@dimen/dimen_width_button"
+        android:layout_height="@dimen/dimen_height_button"
+        android:background="@drawable/boder_button_white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="30dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorHintText"
+        android:maxLines="1"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+</LinearLayout>

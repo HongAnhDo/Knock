@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HeaderStyle">
+        <item name="android:id">@id/header</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+        <item name="android:background">#fafafa</item>
+        <item name="shv_expandedColor">#ffffff</item>
+        <item name="shv_collapsedColor">#ffffff</item>
+    </style>
+    <style name="RecyclerViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:id">@id/recycler_view</item>
+    </style>
+
+</resources>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundGray">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/mHeadFr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBackground">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="Hủy"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sự kiện mới"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="Thêm"
+            android:background="@drawable/selector_button_add"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:enabled="false"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mHeadFr"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tv_titleEvent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:allowUndo="true"
+            android:background="@null"
+            android:hint="Tiêu đề"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorBackgroundGray"/>
+
+        <EditText
+            android:id="@+id/tv_locate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="Vị trí"
+            android:paddingLeft="10dp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Tiêu đề">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorBackgroundGray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Lịch"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/btn_more"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:background="@color/colorWhite"
+                android:src="@drawable/ic_more"
+                android:tint="@color/colorHintText"/>
+
+            <TextView
+                android:id="@+id/tv_tvHome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/btn_more"
+                android:gravity="center"
+                android:text="Nhà"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/tv_tvHome"
+                android:src="@drawable/ic_dot" />
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="URL"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorBackgroundGray"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="Ghi chú"
+            android:paddingLeft="10dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view03"
+        android:layout_below="@+id/view01">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorBackgroundGray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Cả ngày"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <com.sevenheaven.iosswitch.ShSwitchView
+                    android:id="@+id/sh_switchView"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_time_start"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorBackgroundGray" />
+
+                <TextView
+                    android:id="@+id/tv_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Bắt đầu "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:id="@+id/tv_timeStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="00:00"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_DateEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/tv_timeStart"
+                    android:layout_toRightOf="@id/tv_start"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="16/10/2017"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_time_end"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorBackgroundGray"/>
+
+                <TextView
+                    android:id="@+id/tv_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Kết thúc"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:id="@+id/tv_timeFinish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="00:00"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_DateEventEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/tv_timeFinish"
+                    android:layout_toRightOf="@+id/tv_finish"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorBackgroundGray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Lặp lại"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+                <ImageButton
+                    android:id="@+id/ibtn_moreRepeat"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/ic_more"
+                    android:tint="@color/colorHintText"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/ibtn_moreRepeat"
+                    android:text="Không bao giờ"
+                    android:gravity="center"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

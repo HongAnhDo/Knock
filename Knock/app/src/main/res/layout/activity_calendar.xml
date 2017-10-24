@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".activitys.CalendarActivity">
+
+    <com.example.hongdo.knock.models.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe95451"
+        android:elevation="2dp" />
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnCreateEvent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBackground"
+            android:text="CREATE EVENT"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/headCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorBackgroundGray">
+
+            <TextView
+                android:id="@+id/tv_dateSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=""
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ibtn_prevMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/ic_left_arrow" />
+
+            <ImageButton
+                android:id="@+id/ibtn_nextMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
+
+        <ru.noties.scrollable.ScrollableLayout
+            android:id="@+id/scrollable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnCreateEvent"
+            android:layout_below="@+id/headCalendar"
+            app:scrollable_defaultCloseUp="true"
+            app:scrollable_maxScroll="250dp">
+
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView
+
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/compactcalendar_view"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                app:compactCalendarBackgroundColor="@color/colorWhite"
+                app:compactCalendarCurrentDayBackgroundColor="#7fcecc"
+                app:compactCalendarCurrentDayIndicatorStyle="fill_large_indicator"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="#328786"
+                app:compactCalendarEventIndicatorStyle="small_indicator"
+                app:compactCalendarOtherMonthDaysTextColor="#534c4c"
+                app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="true"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextColor="@color/colorBlack"
+                app:compactCalendarTextSize="12sp" />
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/bookings_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calendar_control_buttons_2">
+                </android.support.v7.widget.RecyclerView>
+
+        </ru.noties.scrollable.ScrollableLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
